@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # hoặc master nếu bạn dùng nhánh master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./blogging-website-template
+
+      - name: Build and export static site
+        run: |
+          npm run build
+          npm run export
+        working-directory: ./blogging-website-template
+
+      - name: Copy static site to root
+        run: |
+          cp -a blogging-website-template/out/* .
+          cp blogging-website-template/out/.* . || true
+
+      - name: Keep CNAME file
+        run: cp CNAME ./CNAME || true
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy static site [skip ci]" || echo "No changes to commit"
+          git push origin main
