@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Techipedia</title>
+      <link>https://techipedia.vercel.app,/blog</link>
+      <description>best place to learn trendy tech and understanding concepts</description>
+      <language>en-us</language>
+      <managingEditor>iamkamalkumar@proton.me (Kamal Kashyap)</managingEditor>
+      <webMaster>iamkamalkumar@proton.me (Kamal Kashyap)</webMaster>
+      <lastBuildDate>Tue, 08 Mar 2016 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://techipedia.vercel.app,/tags/code/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://techipedia.vercel.app,/blog/code-sample</guid>
+    <title>Sample .md file</title>
+    <link>https://techipedia.vercel.app,/blog/code-sample</link>
+    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <pubDate>Tue, 08 Mar 2016 00:00:00 GMT</pubDate>
+    <author>iamkamalkumar@proton.me (Kamal Kashyap)</author>
+    <category>markdown</category><category>code</category><category>features</category>
+  </item>
+
+    </channel>
+  </rss>

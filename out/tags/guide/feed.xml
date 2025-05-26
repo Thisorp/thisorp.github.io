@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Techipedia</title>
+      <link>https://techipedia.vercel.app,/blog</link>
+      <description>best place to learn trendy tech and understanding concepts</description>
+      <language>en-us</language>
+      <managingEditor>iamkamalkumar@proton.me (Kamal Kashyap)</managingEditor>
+      <webMaster>iamkamalkumar@proton.me (Kamal Kashyap)</webMaster>
+      <lastBuildDate>Wed, 11 Nov 2020 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://techipedia.vercel.app,/tags/guide/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://techipedia.vercel.app,/blog/guide-to-using-images-in-nextjs</guid>
+    <title>Images in Next.js</title>
+    <link>https://techipedia.vercel.app,/blog/guide-to-using-images-in-nextjs</link>
+    <description>In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.</description>
+    <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
+    <author>iamkamalkumar@proton.me (Kamal Kashyap)</author>
+    <category>next js</category><category>guide</category>
+  </item>
+
+    </channel>
+  </rss>

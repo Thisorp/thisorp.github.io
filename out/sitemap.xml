@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://techipedia.vercel.app,/about</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/blog/guide-to-using-images-in-nextjs</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/blog/new-blog</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/blog/waving-hand</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/blog/code-sample</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/blog/my-fancy-title</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/code</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/features</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/markdown</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/guide</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/css</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/next-js</loc>
+  </url>
+
+  <url>
+    <loc>https://techipedia.vercel.app,/tags/programming</loc>
+  </url>
+</urlset>
