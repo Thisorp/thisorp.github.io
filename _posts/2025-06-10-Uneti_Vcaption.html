@@ -1,0 +1,54 @@
+---
+layout: post
+title: "UNETI VCaption - Hành trình phát triển ứng dụng sinh chú thích ảnh tiếng Việt"
+subtitle: "Tự động sinh caption cho ảnh bằng AI, hỗ trợ tiếng Việt, giao diện Streamlit dễ dùng."
+date: 2025-06-10 23:45:13 -0400
+background: '/img/posts/Uneti_Vcaption.jpg'
+---
+
+## Giới thiệu
+UNETI VCaption là dự án mình phát triển nhằm giải quyết bài toán sinh chú thích ảnh tự động bằng tiếng Việt. Ứng dụng sử dụng các mô hình AI hiện đại, có giao diện trực quan với Streamlit, giúp người dùng dễ dàng tạo caption cho ảnh cá nhân hoặc đánh giá hàng loạt ảnh. Dự án này không chỉ là một sản phẩm công nghệ mà còn là tâm huyết của mình với mong muốn đóng góp cho cộng đồng AI Việt Nam.
+
+## Ý tưởng và động lực
+Trong quá trình học tập và làm việc, mình nhận thấy các công cụ sinh caption ảnh hiện nay chủ yếu hỗ trợ tiếng Anh, rất ít giải pháp cho tiếng Việt. Điều này thôi thúc mình xây dựng một ứng dụng mã nguồn mở, dễ dùng, giúp cộng đồng Việt Nam tiếp cận AI trong xử lý ảnh. Mình muốn tạo ra một sản phẩm vừa hữu ích, vừa dễ tiếp cận cho cả người dùng phổ thông lẫn các bạn sinh viên, nghiên cứu viên.
+
+## Quá trình phát triển
+### 1. Lên ý tưởng và xác định mục tiêu
+Ban đầu, mình xác định mục tiêu là xây dựng một ứng dụng có thể sinh chú thích ảnh tiếng Việt với độ chính xác cao, giao diện thân thiện, dễ sử dụng và dễ triển khai. Mình cũng muốn ứng dụng có thể mở rộng, tích hợp nhiều mô hình khác nhau để người dùng lựa chọn.
+
+### 2. Lựa chọn công nghệ
+Mình chọn Python làm ngôn ngữ chính vì hệ sinh thái AI mạnh mẽ, nhiều thư viện hỗ trợ. Streamlit được chọn để xây dựng giao diện web vì dễ phát triển, trực quan, phù hợp cho cả demo lẫn triển khai thực tế. Ngoài ra, mình sử dụng Google Drive để lưu trữ model, giúp giảm dung lượng repo và thuận tiện cho việc tải model tự động.
+
+### 3. Xây dựng và huấn luyện mô hình
+Ứng dụng tích hợp nhiều mô hình như CaRNetvI, CaRNetvH, CaRNetvHC, CaRNetvHCAttention, đều được tối ưu cho tiếng Việt. Mình đã thử nghiệm nhiều kiến trúc, tinh chỉnh tham số và đánh giá trên tập dữ liệu thực tế để chọn ra mô hình tốt nhất. Việc xử lý tiếng Việt có nhiều thách thức riêng, như dấu câu, từ ghép, nên mình phải điều chỉnh pipeline tiền xử lý và hậu xử lý cho phù hợp.
+
+### 4. Thiết kế giao diện và trải nghiệm người dùng
+Mình chú trọng vào trải nghiệm người dùng: giao diện hỗ trợ cả chế độ Light/Dark, có thể upload ảnh đơn hoặc nhiều ảnh (dạng .zip), kết quả hiển thị trực tiếp, không cần tải file về. Ứng dụng cũng tự động tải model từ Google Drive khi chạy lần đầu, giúp người dùng không phải thao tác thủ công.
+
+### 5. Triển khai và thử nghiệm
+Ứng dụng có thể chạy trên máy tính cá nhân hoặc deploy lên Streamlit Cloud. Mình đã thử nghiệm trên nhiều môi trường, nhận phản hồi từ bạn bè và cộng đồng để cải thiện hiệu năng, giao diện và độ ổn định.
+
+## Tính năng nổi bật
+- Giao diện Light/Dark, dễ sử dụng, phù hợp nhiều đối tượng.
+- Hỗ trợ upload ảnh đơn hoặc nhiều ảnh (dạng .zip), phù hợp cả nhu cầu cá nhân lẫn đánh giá hàng loạt.
+- Kết quả hiển thị trực tiếp trên giao diện, không cần tải file về.
+- Không cần upload model thủ công, tiết kiệm thời gian và giảm thao tác cho người dùng.
+- Tích hợp nhiều mô hình AI, cho phép người dùng lựa chọn phù hợp với mục đích sử dụng.
+- Dễ dàng mở rộng, phát triển thêm các tính năng mới trong tương lai.
+
+## Kết quả và bài học
+Dự án giúp mình nâng cao kỹ năng về Python, Streamlit, và hiểu sâu hơn về xử lý ngôn ngữ tự nhiên tiếng Việt. Mình học được cách tối ưu trải nghiệm người dùng, triển khai ứng dụng AI thực tế, cũng như làm việc với các công nghệ lưu trữ, triển khai cloud. Ngoài ra, mình còn rèn luyện kỹ năng viết tài liệu, hướng dẫn sử dụng và làm việc nhóm khi nhận được sự đóng góp từ cộng đồng.
+
+## Định hướng phát triển
+Trong tương lai, mình dự định mở rộng ứng dụng với các tính năng như:
+- Hỗ trợ nhiều ngôn ngữ hơn ngoài tiếng Việt.
+- Tích hợp thêm các mô hình AI mới, nâng cao chất lượng caption.
+- Cho phép người dùng tải về kết quả dưới dạng file csv hoặc pdf.
+- Xây dựng API để các ứng dụng khác có thể tích hợp dễ dàng.
+
+## Đóng góp & phát triển tiếp
+Dự án vẫn đang mở rộng, mình mong muốn nhận được góp ý, pull request từ cộng đồng để hoàn thiện hơn. Nếu bạn quan tâm, hãy thử trải nghiệm và đóng góp tại [repo GitHub](https://github.com/Thisorp/Uneti_Vcaption). Mọi ý kiến đóng góp đều rất quý giá với mình!
+
+---
+**Tác giả:** Thisorp
+
