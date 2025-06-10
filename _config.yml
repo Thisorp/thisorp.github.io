@@ -23,3 +23,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+languages: ["vi", "en"]
+default_lang: "vi"
+exclude_from_localizations: ["assets", "img", "vendor"]

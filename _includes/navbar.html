@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
+          <a class="nav-link" href="{{"/" | relative_url }}">{{ site.t.home | default: 'Home' }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+          <a class="nav-link" href="{{"/about" | relative_url }}">{{ site.t.about | default: 'About' }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://thysorp.id.vn/portfolio/" target="_blank">Portfolio</a>
+          <a class="nav-link" href="https://thysorp.id.vn/portfolio/" target="_blank">{{ site.t.portfolio | default: 'Portfolio' }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
+          <a class="nav-link" href="{{ "/posts" | relative_url }}">{{ site.t.posts | default: 'Posts' }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
+          <a class="nav-link" href="{{"/contact" | relative_url }}">{{ site.t.contact | default: 'Contact' }}</a>
         </li>
       </ul>
     </div>

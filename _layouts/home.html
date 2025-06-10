@@ -4,7 +4,7 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead" style="background-image: url({{ page.background | prepend: site.baseurl | replace: '//', '/' }});">
   {% else %}
   <header class="masthead">
     {% endif %}
@@ -20,7 +20,7 @@ layout: default
             <!-- Thanh chạy nhạc -->
             <audio controls autoplay style="margin-top: 20px; width: 100%;">
               <source src="{{ '/assets/music.mp3' | relative_url }}" type="audio/mpeg">
-              Trình duyệt của bạn không hỗ trợ phát nhạc.
+              {{ site.t.audio_not_supported | default: 'Trình duyệt của bạn không hỗ trợ phát nhạc.' }}
             </audio>
           </div>
         </div>
@@ -63,7 +63,7 @@ layout: default
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">{{ site.t.view_all_posts | default: 'View All Posts &rarr;' }}</a>
         </div>
 
       </div>
