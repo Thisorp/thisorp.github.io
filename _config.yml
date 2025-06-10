@@ -1,4 +1,4 @@
-title:              Thisorp Blogs
+title:              Thisorp Portfolio
 email:              congtran21062003@gmail.com
 description:        A Blog from Beginner Dev
 author:             Thisorp
@@ -13,7 +13,7 @@ instagram_username: ins_thisorp
 linkedin_username:  thisorp
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   G-6PJJKXKDL0 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
