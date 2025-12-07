@@ -1,0 +1,29 @@
+title:              Thisorp Portfolio
+email:              congtran21062003@gmail.com
+description:        A Blog from Beginner Dev
+author:             Thisorp
+baseurl:            ""
+url:                "https://thysorp.id.vn"
+
+# Social Profiles
+twitter_username:   Thisorp03
+github_username:    Thisorp
+facebook_username:  thisorpIE
+instagram_username: ins_thisorp
+linkedin_username:  thisorp
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   G-6PJJKXKDL0 # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+languages: ["vi", "en"]
+default_lang: "vi"
+exclude_from_localizations: ["assets", "img", "vendor"]
