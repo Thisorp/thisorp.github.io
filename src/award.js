@@ -11,8 +11,3 @@ export function Awd() {
         </div>
     );
 }
-        </div>
-    );
-}
-
-export default Awd;
