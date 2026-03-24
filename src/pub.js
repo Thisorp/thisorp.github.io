@@ -4,28 +4,22 @@ import "./styles/main.css";
 
 
 export function Pub() {
-    const journal = [];
-    Pubraw.journal.map((paper) => {
-        journal.push(
-            <li><span>
-                <b>{paper.title}</b><br/>
-                {paper.author} <br/>
-                {paper.organization}  <br/>
-                <a href={paper.link} target="_blank"  rel="noreferrer">[Paper]</a>
-            </span></li>
-        );
-    });
-    const conference = [];
-    Pubraw.conference.map((paper) => {
-        conference.push(
-            <li><span>
-                <b>{paper.title}</b><br/>
-                {paper.author} <br/>
-                {paper.organization}  <br/>
-                <a href={paper.link} target="_blank"  rel="noreferrer">[Paper]</a>
-            </span></li>
-        );
-    });
+    const journal = Pubraw.journal.map((paper) => (
+        <li key={paper.title}><span>
+            <b>{paper.title}</b><br/>
+            {paper.author} <br/>
+            {paper.organization}  <br/>
+            <a href={paper.link} target="_blank"  rel="noreferrer">[Paper]</a>
+        </span></li>
+    ));
+    const conference = Pubraw.conference.map((paper) => (
+        <li key={paper.title}><span>
+            <b>{paper.title}</b><br/>
+            {paper.author} <br/>
+            {paper.organization}  <br/>
+            <a href={paper.link} target="_blank"  rel="noreferrer">[Paper]</a>
+        </span></li>
+    ));
     return (
         
         <div class="pub-list">

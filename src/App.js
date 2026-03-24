@@ -8,9 +8,9 @@ import { ASCII } from "./tool";
 import {Path, Code, Contact} from "./tool";
 import "./styles/main.css";
 
-const paths = ['~\Home', '~\Project', '~\Publication', '~\Experience', '~\Award', '~\Project'];
+const paths = ['~\\Home', '~\\Project', '~\\Publication', '~\\Experience', '~\\Award', '~\\Project'];
 
-function Intro_content(p) {
+function IntroContent(p) {
 	return (
 		<div id='app'> 
 			<ASCII />
@@ -27,7 +27,7 @@ function Intro_content(p) {
 	);
 }
 
-function Pro_content(p) {
+function ProContent(p) {
 	return (
 		<div id='app'> 
 			<ASCII />
@@ -41,7 +41,7 @@ function Pro_content(p) {
 	);
 }
 
-function Pub_content(p) {
+function PubContent(p) {
 	return (
 		<div id='app'> 
 			<ASCII />
@@ -55,7 +55,7 @@ function Pub_content(p) {
 	);
 }
 
-function Exp_content(p) {
+function ExpContent(p) {
 	return (
 		<div id='app'> 
 			<ASCII />
@@ -69,7 +69,7 @@ function Exp_content(p) {
 	);
 }
 
-function Awd_content(p) {
+function AwdContent(p) {
 	return (
 		<div id='app'> 
 			<ASCII />
@@ -84,24 +84,24 @@ function Awd_content(p) {
 }
 
 function App(props) {
-	if (props.index == 1) {
-	  return <Intro_content  index={props.index}/>;
+	if (props.index === 1) {
+	  return <IntroContent  index={props.index}/>;
 	}
-	else if (props.index == 2) {
-		return <Pro_content index={props.index}/>;
+	else if (props.index === 2) {
+		return <ProContent index={props.index}/>;
 	}
-	else if (props.index == 3) {
-		return <Pub_content index={props.index}/>;
+	else if (props.index === 3) {
+		return <PubContent index={props.index}/>;
 	}
-	else if (props.index == 4) {
-		return <Exp_content  index={props.index}/>;
+	else if (props.index === 4) {
+		return <ExpContent  index={props.index}/>;
 	}
-	else if (props.index == 5) {
-		return <Awd_content  index={props.index}/>;
+	else if (props.index === 5) {
+		return <AwdContent  index={props.index}/>;
 	}
 	// TODO : Project
-	else if (props.index == 6) {
-		return <Intro_content  index={props.index}/>;
+	else if (props.index === 6) {
+		return <IntroContent  index={props.index}/>;
 	}	
 }
 

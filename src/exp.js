@@ -3,12 +3,11 @@ import Expraw from "./customization/Experience.json";
 import "./styles/main.css";
 
 export function Exp() {
-    const result = [];
-    Expraw.companies.map((company) => {
-        result.push(
-            <div class="edu">
+    return (
+        Expraw.companies.map((company) => (
+            <div class="edu" key={company.name}>
                 <span id="logo-block">
-                <img src={require(`${company.logo}`)}  alt={"company"} />
+                <img src={require(`${company.logo}`)}  alt={company.name} />
                 </span>
                 <span class="text">
                     <p class="school">{company.name}  </p>
@@ -16,11 +15,7 @@ export function Exp() {
                     <p class="time">{company.discription}  </p>
                 </span>
             </div>
-        );
-    });
-
-    return (
-        result
+        ))
     );
 }
 

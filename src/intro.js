@@ -5,7 +5,7 @@ import Introraw from './customization/Introduction.json'
 import Eduraw from './customization/Education.json'
 
 
-export function Read_Intro() {
+export function ReadIntro() {
     return (
         <span class="text blcok-long">
             {Introraw.intro}
@@ -23,20 +23,19 @@ export function Intro() {
     return (
         <div class="intro">
             <span id="blcok">
-                <img src={head}/>
+                <img src={head} alt="Profile"/>
             </span>
-            <Read_Intro />
+            <ReadIntro />
         </div>
     );
 }
 
 export function Edu() {
-    const result = [];
-    Eduraw.schools.map((school) => {
-        result.push(
-            <div class="edu">
+    return (
+        Eduraw.schools.map((school) => (
+            <div class="edu" key={school.name}>
                 <span id="logo-block">
-                <img src={require(`${school.logo}`)}  alt={"school"} />
+                <img src={require(`${school.logo}`)}  alt={school.name} />
                 </span>
                 <span class="text">
                     <p class="school">{school.name}  </p>
@@ -44,10 +43,6 @@ export function Edu() {
                     <p class="time">{school.time}  </p>
                 </span>
             </div>
-        );
-    });
-
-    return (
-        result
+        ))
     );
 }
