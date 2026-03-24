@@ -5,32 +5,28 @@ import "./styles/main.css";
 
 export function Pro() {
     return (
-        <div class="pro">
+        <div className="pro">
             {Proraw.projects.map((project) => (
                 <div key={project.project_name}>
-                    <div class="probox">
+                    <div className="probox">
                         <img src={require(`${project.project_img}`)}  alt={project.project_name} />
-                        <div class="pro-content">
-                            <div class="pro-title">
+                        <div className="pro-content">
+                            <div className="pro-title">
                                 {project.project_name}
                             </div>
-                            <div class="pro-about">
+                            <div className="pro-about">
                                 {project.project_about}
                             </div>
-                            <div class="pro-bottom">
-                                <span class="pro-tool">Tools: {project.project_tool}</span>
-                                <span class="pro-link"><a target="_blank" href={project.project_link} rel="noreferrer"><i class="fa-brands fa-github"></i></a></span>
+                            <div className="pro-bottom">
+                                <span className="pro-tool">Tools: {project.project_tool}</span>
+                                <span className="pro-link"><a target="_blank" href={project.project_link} rel="noreferrer"><i className="fa-brands fa-github"></i></a></span>
                             </div>
                         </div>
                     </div>
-                    <br/>
+                    <br />
                 </div>
             ))}
         </div>
-    );
-}
-		</div>
-        
     );
 }
 
