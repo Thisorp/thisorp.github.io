@@ -6,6 +6,7 @@ import Awd from "./award";
 import Pro from "./pro";
 import { ASCII } from "./tool";
 import {Path, Code, Contact} from "./tool";
+import "./styles/fa-all.css";
 import "./styles/main.css";
 
 const paths = ['~\\Home', '~\\Project', '~\\Publication', '~\\Experience', '~\\Award', '~\\Project'];
