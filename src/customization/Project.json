@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "project_img": "./img/monitoring.png",
+      "project_name": "Monitoring Stack (Prometheus + Grafana + Alertmanager)",
+      "project_about": "Built a full monitoring system for infrastructure and applications using Prometheus, Grafana, and Alertmanager; implemented alert rules, Telegram notifications, and dashboard visualization.",
+      "project_tool": "Prometheus, Grafana, Alertmanager, Docker, Linux",
+      "project_link": ""
+    },
+    {
+      "project_img": "./img/kong.png",
+      "project_name": "Kong Gateway Monitoring & Logging",
+      "project_about": "Designed monitoring and logging solution for Kong Gateway; collected metrics (kong_http_requests_total), built queries, and visualized traffic per service.",
+      "project_tool": "Kong Gateway, Prometheus, Grafana, Linux",
+      "project_link": ""
+    },
+    {
+      "project_img": "./img/monitoring.png",
+      "project_name": "OracleDB Monitoring with Exporter",
+      "project_about": "Deployed OracleDB exporter and integrated with Prometheus; monitored database performance, connections, and metrics using custom configuration.",
+      "project_tool": "OracleDB, Prometheus, Docker, Linux",
+      "project_link": ""
+    },
+    {
+      "project_img": "./img/monitoring.png",
+      "project_name": "Blackbox Monitoring (HTTP/TCP)",
+      "project_about": "Configured Blackbox Exporter to monitor HTTP and TCP endpoints; implemented uptime checks and alerting for services.",
+      "project_tool": "Prometheus, Blackbox Exporter, Linux",
+      "project_link": ""
+    },
+    {
+      "project_img": "./img/portfolio.jpg",
+      "project_name": "Terminal Portfolio Website",
+      "project_about": "Developed a personal portfolio website with terminal-style UI; supports command input (help, about, projects, skills, contact) with typing effect.",
+      "project_tool": "HTML, CSS, JavaScript / React",
+      "project_link": ""
+    }
+  ]
+}

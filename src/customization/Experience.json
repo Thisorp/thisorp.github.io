@@ -1,0 +1,16 @@
+{
+  "companies": [
+    {
+      "logo": "./img/vnpost.png",
+      "name": "Vietnam Post (VNPost)",
+      "position_time": "System Engineer / DevOps, 2024 - Present",
+      "description": "Monitoring system development using Prometheus, Grafana, and Alertmanager; API integration and troubleshooting; managing Kong Gateway; working with Oracle DB and exporters; handling Linux servers, Docker deployment, and system performance optimization."
+    },
+    {
+      "logo": "./img/freelance.png",
+      "name": "Personal / Lab Projects",
+      "position_time": "DevOps & System Practice, 2023 - 2024",
+      "description": "Built monitoring stacks (Prometheus + Grafana); deployed services with Docker Compose; implemented alerting pipelines; configured exporters (Node, OracleDB, Blackbox); practiced system automation and troubleshooting in Linux environments."
+    }
+  ]
+}
