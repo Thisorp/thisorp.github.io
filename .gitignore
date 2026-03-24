@@ -1,2 +1,19 @@
 node_modules
 node_modules/*
+
+# Local env and secret config
+.env
+.env.*
+
+# GitHub Actions secrets / token caches
+.github/workflows/*
+
+# Composer / npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+build/
+coverage/
