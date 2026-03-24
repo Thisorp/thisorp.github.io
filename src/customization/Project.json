@@ -27,13 +27,7 @@
       "project_about": "Configured Blackbox Exporter to monitor HTTP and TCP endpoints; implemented uptime checks and alerting for services.",
       "project_tool": "Prometheus, Blackbox Exporter, Linux",
       "project_link": ""
-    },
-    {
-      "project_img": "./img/portfolio.jpg",
-      "project_name": "Terminal Portfolio Website",
-      "project_about": "Developed a personal portfolio website with terminal-style UI; supports command input (help, about, projects, skills, contact) with typing effect.",
-      "project_tool": "HTML, CSS, JavaScript / React",
-      "project_link": ""
     }
+    
   ]
 }
