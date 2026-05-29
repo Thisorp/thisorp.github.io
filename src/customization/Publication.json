@@ -1,0 +1,24 @@
+{
+  "journal": [],
+  "conference": [],
+  "technical_works": [
+    {
+      "title": "Monitoring System with Prometheus & Grafana",
+      "author": "Tran Chi Cong",
+      "organization": "Personal / VNPost System",
+      "link": ""
+    },
+    {
+      "title": "Kong Gateway Monitoring and Metrics Analysis",
+      "author": "Tran Chi Cong",
+      "organization": "VNPost",
+      "link": ""
+    },
+    {
+      "title": "Oracle Database Monitoring using Exporter",
+      "author": "Tran Chi Cong",
+      "organization": "Personal / VNPost System",
+      "link": ""
+    }
+  ]
+}
