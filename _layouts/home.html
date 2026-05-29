@@ -17,11 +17,10 @@ layout: default
             {% if site.description %}
             <span class="subheading">{{ site.description }}</span>
             {% endif %}
-            <!-- Thanh chạy nhạc -->
-            <audio controls autoplay style="margin-top: 20px; width: 100%;">
-              <source src="{{ '/assets/music.mp3' | relative_url }}" type="audio/mpeg">
-              {{ site.t.audio_not_supported | default: 'Trình duyệt của bạn không hỗ trợ phát nhạc.' }}
-            </audio>
+            <div class="hero-cta mt-5">
+              <a href="{{ "/about" | relative_url }}" class="btn btn-light btn-lg mr-3">Learn About Me</a>
+              <a href="{{ "/contact" | relative_url }}" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            </div>
           </div>
         </div>
       </div>
