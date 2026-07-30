@@ -21,9 +21,9 @@ observability > guesswork`
 
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [history]);
+  // useEffect(() => {
+  //   bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // }, [history]);
 
   const handleCommand = (e: React.FormEvent) => {
     e.preventDefault();
